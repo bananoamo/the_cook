@@ -1,15 +1,12 @@
+.PHONEY: all build clean
 
+NAME=the_cook
 
-NAME=./main.go
+all: build
+	./$(NAME)
 
-all:
+build:
 	go build .
-	./the_cook
-
-run:
-	go run .
 
 clean:
-	rm -f main
-
-.PHONEY: all run clean
+	rm -f $(NAME)
