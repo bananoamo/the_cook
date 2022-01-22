@@ -196,7 +196,7 @@ func (app *Application) makePotion(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "hint: structure is correct but there is some mistakes in values. Look in recipe to compare", http.StatusBadRequest)
 		return
 	}
-	app.writeResponse(w, http.StatusAccepted, "Good job. Thats for you https://www.meme-arsenal.com/create/meme/6262061")
+	app.writeResponse(w, http.StatusAccepted, "Good job. Thats for you https://meme-arsenal.com/create/template/925394")
 
 }
 
